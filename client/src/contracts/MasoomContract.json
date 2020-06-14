@@ -19801,10 +19801,16 @@
       "links": {},
       "address": "0x99aA56FAB83623b363eC74567DAe74370BA1265E",
       "transactionHash": "0xbbce28c3622ddf7cbde10ab7391bd0670c57283ade7d5469bdeab3462afc2779"
+    },
+    "1592118393916": {
+      "events": {},
+      "links": {},
+      "address": "0xBf26A8582D51E6a59EbCDCa85E182fD833f63A27",
+      "transactionHash": "0x7400845c278bce659d0917e3366a76545f49c78b66d48d23802d2c9c1e50a364"
     }
   },
   "schemaVersion": "3.2.0",
-  "updatedAt": "2020-06-14T06:49:30.939Z",
+  "updatedAt": "2020-06-14T07:08:49.644Z",
   "networkType": "ethereum",
   "devdoc": {
     "methods": {}
