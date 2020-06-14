@@ -84,17 +84,29 @@ class VerifyDoctor extends Component {
     if(this.state.doctorsList){
         doctorsList = this.state.doctorsList.map((doctor) => {
         return (
-          <div className="candidate">
-            <div className="candidateName">Doctor : {doctor.name}</div>
+          <div className="candidate candidate-ui">
+            <div className="candidateName">Doctor : {doctor.name}
+            {doctor.isVerified ?
+            
+            <span className="verification-success">Verified</span>
+            :
+            ""}
+            
+            </div>
             <div className="candidateDetails">
-              <div>Registeration ID : {doctor.registerationId}</div>
-              <div>Hospital : {doctor.hospital}</div>
-              <div>College : {doctor.hospital}</div>
-              <div>Field : {doctor.field}</div>
-              <div>Doctor Address : {doctor.doctorAddress}</div>
+              <div><span className="candidate-labels">Registeration ID</span> <span className="candidate-value">{doctor.registerationId}</span> </div><br />
+              <div><span className="candidate-labels">Hospital</span> <span className="candidate-value">{doctor.hospital}</span> </div><br />
+              {/* <div>College : {doctor.hospital}</div> */}
+              <div><span className="candidate-labels">Field</span> <span className="candidate-value">{doctor.field}</span> </div><br />
+              <div><span className="candidate-labels">Doctor Address</span> <span className="candidate-value"> {doctor.doctorAddress}</span> </div><br />
             </div>
 
-            {doctor.isVerified ? <Button className="button-verified">Verified</Button> : <Button onClick={this.verifyDoctor} value={doctor.doctorAddress} className="button-verify">Verify</Button>}
+            {doctor.isVerified ? 
+            <div>
+
+            {/* <Button className="button-verified">Verified</Button>  */}
+            </div>
+            : <Button onClick={this.verifyDoctor} value={doctor.doctorAddress} className="button-verify">Verify</Button>}
           </div>
         );
       });

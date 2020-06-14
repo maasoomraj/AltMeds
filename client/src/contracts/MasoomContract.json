@@ -19807,10 +19807,16 @@
       "links": {},
       "address": "0xBf26A8582D51E6a59EbCDCa85E182fD833f63A27",
       "transactionHash": "0x7400845c278bce659d0917e3366a76545f49c78b66d48d23802d2c9c1e50a364"
+    },
+    "1592123826750": {
+      "events": {},
+      "links": {},
+      "address": "0x88B02aF1Be17Af0c1D6C393955CcC06a94A2EE09",
+      "transactionHash": "0xb4c9ac4a8b892d27848e08250bfdd2ba40a9daa71b2cdee6b58d2b6ff62baa41"
     }
   },
   "schemaVersion": "3.2.0",
-  "updatedAt": "2020-06-14T07:08:49.644Z",
+  "updatedAt": "2020-06-14T08:40:23.277Z",
   "networkType": "ethereum",
   "devdoc": {
     "methods": {}

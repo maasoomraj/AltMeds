@@ -94,7 +94,7 @@ class GetAlternatives extends Component {
             alternateList = this.state.alternateList.map((candidate) => {
                 count++;
             return (
-                <div className="candidateName">
+                <div className="drugs">
                     {count} : {candidate}
                 </div>
             //   <div className="candidate">
@@ -140,9 +140,10 @@ class GetAlternatives extends Component {
 
         <div className="form form-ui">
           <FormGroup>
-            <div className="form-label">Enter Medicine / Disease Name - </div>
+            {/* <div className="form-label">Enter Medicine / Disease Name - </div> */}
             <div className="form-input">
               <FormControl
+                  className="form-better"
                   input = 'text'
                   value = {this.state.med}
                   onChange={this.updateMed}
@@ -150,7 +151,7 @@ class GetAlternatives extends Component {
               />
             </div>
             <Button onClick={this.showResult} className="button-vote">
-              SHOW
+              Get Results
             </Button>
           </FormGroup>
         </div>
@@ -160,10 +161,12 @@ class GetAlternatives extends Component {
 
         {this.state.toggle ? 
           <div>
-            <div className="CandidateDetails-mid-sub-title">
-              Alternatives -
+            <div className="CandidateDetails-mid-sub-title results-header">
+              Results
             </div>
+            <div className="results">
             {alternateList}
+            </div>
           </div>
 
           
