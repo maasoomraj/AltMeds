@@ -8,6 +8,7 @@
   },
   "dependencies": {
     "@truffle/hdwallet-provider": "^1.0.35",
+    "ganache-cli": "^6.9.1",
     "make": "^0.8.1"
   },
   "devDependencies": {},

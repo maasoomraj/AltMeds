@@ -136,14 +136,14 @@ class RequestDoctor extends Component {
         <div className="CandidateDetails">
           <div className="CandidateDetails-title">
             <h1>
-              VOTER FORM
+              Doctor Application Form
             </h1>
           </div>
         </div>
 
         {this.state.isOwner ? <NavigationAdmin /> : <Navigation />}
 
-        <div className="form">
+        <div className="form form-ui">
         <FormGroup>
             <div className="form-label">Enter Name - </div>
             <div className="form-input">
@@ -151,55 +151,61 @@ class RequestDoctor extends Component {
                   input = 'text'
                   value = {this.state.name}
                   onChange={this.updateName}
+                  placeholder="Name"
               />
             </div>
         </FormGroup>
 
         <FormGroup>
-            <div className="form-label">Enter Registeration ID - </div>
+            <div className="form-label">Enter Registeration ID : </div>
             <div className="form-input">
               <FormControl
                   input = 'textArea'
                   value = {this.state.registerationId}
                   onChange={this.updateRegisterationId}
+                  placeholder="Enter Registeration ID"
               />
             </div>
         </FormGroup>
 
         <FormGroup>
-            <div className="form-label">Enter Hospital - </div>
+            <div className="form-label">Enter Hospital : </div>
             <div className="form-input">
               <FormControl
                   input = 'text'
                   value = {this.state.hospital}
                   onChange={this.updateHospital}
+                  placeholder="Enter your hospital"
               />
             </div>
         </FormGroup>
 
         <FormGroup>
-            <div className="form-label">Enter Qualification - </div>
+            <div className="form-label">Enter Qualification : </div>
             <div className="form-input">
               <FormControl
                   input = 'text'
                   value = {this.state.college}
                   onChange={this.updateCollege}
+                  placeholder="Enter qualification"
               />
             </div>
         </FormGroup>
 
         <FormGroup>
-            <div className="form-label">Enter Your Field - </div>
+            <div className="form-label">Enter Your Field : </div>
             <div className="form-input">
               <FormControl
                   input = 'text'
                   value = {this.state.field}
                   onChange={this.updateField}
+                  placeholder="enter your field"
               />
             </div>
         </FormGroup>
+        <hr className="separator"/>
         <Button onClick={this.addDoctor}  className="button-vote">
-          Request to Add Doctor
+          Apply
         </Button>
         </div>
 
