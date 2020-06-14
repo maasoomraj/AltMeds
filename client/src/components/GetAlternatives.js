@@ -138,7 +138,7 @@ class GetAlternatives extends Component {
         {this.state.isOwner ? <NavigationAdmin /> : <Navigation />}
 
 
-        <div className="form">
+        <div className="form form-ui">
           <FormGroup>
             <div className="form-label">Enter Medicine / Disease Name - </div>
             <div className="form-input">
@@ -146,6 +146,7 @@ class GetAlternatives extends Component {
                   input = 'text'
                   value = {this.state.med}
                   onChange={this.updateMed}
+                  placeholder="Enter medicine/disease name"
               />
             </div>
             <Button onClick={this.showResult} className="button-vote">
@@ -160,7 +161,7 @@ class GetAlternatives extends Component {
         {this.state.toggle ? 
           <div>
             <div className="CandidateDetails-mid-sub-title">
-              Alternates -
+              Alternatives -
             </div>
             {alternateList}
           </div>

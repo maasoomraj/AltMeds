@@ -93,7 +93,8 @@ class Home extends Component {
             WELCOME TO ALT-MEDS
             <div>
                 Made by Masoom Raj and Arpit Gupta
-                <p>IIT Jodhpur</p>
+                <p>
+                IIT Jodhpur</p>
             </div>
         </div>
 

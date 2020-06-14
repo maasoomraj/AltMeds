@@ -141,40 +141,43 @@ class AddAlternative extends Component {
 
         {this.state.isOwner ? <NavigationAdmin /> : <Navigation />}
 
-        <div className="form">
+        <div className="form form-ui">
         <FormGroup>
-            <div className="form-label">Enter Medicine - </div>
+            <div className="form-label">Enter Medicine : </div>
             <div className="form-input">
               <FormControl
                   input = 'text'
                   value = {this.state.med}
                   onChange={this.updateMed}
+                  placeholder="Enter Medicine"
               />
             </div>
         </FormGroup>
 
         <FormGroup>
-            <div className="form-label">Enter Alternative drug - </div>
+            <div className="form-label">Enter Alternative drug : </div>
             <div className="form-input">
               <FormControl
                   input = 'textArea'
                   value = {this.state.drug}
                   onChange={this.updateDrug}
+                  placeholder="Enter Alternative drug"
               />
             </div>
         </FormGroup>
 
         <FormGroup>
-            <div className="form-label">Enter Disease Name - </div>
+            <div className="form-label">Enter Disease Name : </div>
             <div className="form-input">
               <FormControl
                   input = 'text'
                   value = {this.state.disease}
                   onChange={this.updateDisease}
+                  placeholder="Enter Disease Name"
               />
             </div>
         </FormGroup>
-
+        <hr className="separator"/>
         <Button onClick={this.addAlternative}  className="button-vote">
           Add Alternative
         </Button>
