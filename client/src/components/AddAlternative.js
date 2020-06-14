@@ -143,9 +143,10 @@ class AddAlternative extends Component {
 
         <div className="form form-ui">
         <FormGroup>
-            <div className="form-label">Enter Medicine : </div>
+            {/* <div className="form-label">Enter Medicine : </div> */}
             <div className="form-input">
               <FormControl
+                  className="form-better"
                   input = 'text'
                   value = {this.state.med}
                   onChange={this.updateMed}
@@ -155,9 +156,10 @@ class AddAlternative extends Component {
         </FormGroup>
 
         <FormGroup>
-            <div className="form-label">Enter Alternative drug : </div>
+            {/* <div className="form-label">Enter Alternative drug : </div> */}
             <div className="form-input">
               <FormControl
+                  className="form-better"
                   input = 'textArea'
                   value = {this.state.drug}
                   onChange={this.updateDrug}
@@ -167,9 +169,10 @@ class AddAlternative extends Component {
         </FormGroup>
 
         <FormGroup>
-            <div className="form-label">Enter Disease Name : </div>
+            {/* <div className="form-label">Enter Disease Name : </div> */}
             <div className="form-input">
               <FormControl
+                  className="form-better"
                   input = 'text'
                   value = {this.state.disease}
                   onChange={this.updateDisease}

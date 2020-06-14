@@ -10,7 +10,8 @@ body {
   /* background-color: #395793; */
   /* background-color: #072c77; */
   /* background-color: #0e31a3; */
-  background-color: #34d4da;
+  background-color: #127385;
+  margin-bottom: 5%;
 }
 
 code {
@@ -47,6 +48,7 @@ code {
     width: 90%;
     margin: 50px;
     background-color: #236abb;
+    
 }
 
 .candidate:hover{
@@ -59,20 +61,54 @@ code {
   padding-left: 60px;
   text-align: left;
   background-color: #bec8ed;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  height: 40px;
+  /* align-items: center; */
 }
 
 .candidateDetails {
   background-color: #172a5b;
   background-color: #0e2e85;
+  background-color: rgba(88, 177, 218, 0.267);
   color: #eeeeee;
+  color: black;
   padding-top: 10px;
   padding-bottom: 10px;
   font-size: 18px;
   font-family: initial;
+  /* margin-left:20%; */
+  border-radius: 20px;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  /* text-align: left; */
 }
 
 .CandidateDetails{
   text-align: center;
+}
+
+.candidate-labels{
+  float: left;
+  margin-left: 20%;
+}
+
+.candidate-value{
+  text-align: left;
+  float:right;
+  margin-right: 20%;
+}
+
+.candidate-ui{
+  padding-top: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  background-color: rgb(114, 184, 216);
+  /* text-align: left; */
+  border-radius: 20px;
+  width: 80%;
+  margin-left: 10%;
+  padding-bottom: 20px;
 }
 
 .CandidateDetails-title{
@@ -83,6 +119,7 @@ code {
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: #eeeeee;
+  
 }
 
 .CandidateDetails-sub-title{
@@ -95,6 +132,18 @@ code {
   color: #eeeeee;
 }
 
+.verification-success{
+  float: right;
+  margin-right: 30px;
+  /* color: green; */
+  background-color: green;
+  border-radius: 20px;
+  padding: 2px;
+  margin-top: 2px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
 .form{
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
   transition: 0.3s;
@@ -102,6 +151,9 @@ code {
   margin: 50px;
   background-color: #074f9b;
   background-color: #2976ce;
+  background-color: white;
+  align-items: center;
+  /* margin-bottom: 10%; */
 }
 
 .form-label{
@@ -137,11 +189,13 @@ code {
   animation-duration: 4s;
   margin-bottom: 10px;
   width: 30%;
+  border-radius: 40px;
 }
 
 .button-vote:hover{
-  box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.6);
-  background-color:rgb(134, 175, 76);
+  box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.6);
+  /* background-color:rgb(134, 175, 76); */
+  background-color: rgb(88, 197, 88);
 }
 
 .CandidateDetails-mid-sub-title{
@@ -169,10 +223,11 @@ code {
   cursor: pointer;
   margin-bottom: 10px;
   /* width: 50%; */
+  /* width: 30%; */
 }
 
 .button-verify{
-  background-color: rgb(126, 13, 1);
+  background-color: rgb(100, 167, 55);
   border: none;
   color: white;
   padding: 15px 32px;
@@ -183,11 +238,13 @@ code {
   margin: 4px 2px;
   cursor: pointer;
   margin-bottom: 10px;
+  width: 30%;
+  border-radius: 20px;
 }
 
 .button-verify:hover{
   box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.6);
-  background-color:rgb(175, 76, 114);
+  background-color:rgb(72, 212, 126);
 }
 
 .admin-buttons{
@@ -294,28 +351,45 @@ code {
 }
 
 .heading { 
-  background-color: #1f2833;
+  /* background-color: #1f2833; */
 }
 
 .Admin{
-  background-color: #bd2409;
-  height: 25px;
+  background-color: #db332d;
+  /* height: 50px; */
+  /* color: rgb(139, 15, 15); */
+  /* background-color: rgb(111, 111, 209); */
+  font-size: 120%;
+  text-align: center;
+  width: 80px;
+  padding: 11px;
+  border-radius: 32%;
+  /* height: 30px; */
+  align-items: center;
+  /* padding: 0%; */
+  /* margin: auto */
+}
+
+.navbar-admin a{
+  /* width: 20%; */
 }
 
 .home {
   margin: 50px;
   /* border-color: #14a38b; */
   border-color: #31b19b;
-  border-color: #189782;
+  /* border-color: #189782; */
   border-width: 30px;
   border-style:solid;
   /* border-radius: 59%; */
   box-shadow: white;
   font-size: 24px;
   color: #0d0d0d;
-  /* background-color: rgb(94, 145, 208); */
-  background-color: rgb(69, 118, 179);
+  background-color: rgb(68, 119, 182);
+  /* background-color: rgb(69, 118, 179);
+  background-color: rgb(9, 36, 94); */
   padding: 20px;
+  margin-top: 7%;
   animation-name: example2;
   animation-duration: 4s;
 }
@@ -326,10 +400,7 @@ code {
 }
 
 
-.form-ui{
-  margin: auto;
-  margin-top: 3%;
-}
+
 
 .separator{
   padding: 0%;
@@ -337,5 +408,103 @@ code {
   margin-bottom: 5px;
   background-color: #392f48;
   color: #392f48;
-  border: 1px solid #392f48;
+  border: 0.3px solid #a196b3;
+}
+
+
+.form-better{
+  background-color: rgba(255, 255, 255, 0);
+  width: 70%;
+  color: black;
+  margin-left: 15%;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-bottom-color: royalblue;
+  border-top-style: none; 
+  border-right-style: none; 
+  border-left-style: none;
+  border-radius: 0%;
+  margin-bottom: 5px;
+  /* background-color: rgba(113, 180, 128, 0.822); */
+  /* outline: none; */
+  /* padding: 20px; */
+  outline: rgba(255, 255, 255, 0);
+}
+
+
+
+input.form-better.form-control:focus {
+  outline: rgba(255, 255, 255, 0);
+  
+}
+
+input:focus-visible{
+  outline: none;
+}
+
+input:focus{
+  outline: none;
+}
+
+.form-header{
+  margin-top: 20px;
+}
+
+.form-ui{
+  border-radius: 20px;
+  box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.6);
+  margin: auto;
+  margin-top: 4%;
+  padding-top: 20px;
+  /* padding-bottom: px; */
+  background-color: rgb(231, 241, 228);
+  width: 50%;
+  padding-bottom: 15px;
+}
+
+
+::placeholder {
+  color: #131414;
+  opacity: 1;
+}
+
+input:focus{
+    outline: none;
+}
+
+.drugs{
+  background-color: rgb(99, 194, 231);
+  font-size: 22px;
+  text-align: center;
+  width: 70%;
+  margin: 20px;
+  margin-left: 15%;
+  border-radius: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  /* padding-left: 20%; */
+}
+
+.drugs:hover{
+  background-color: rgb(66, 226, 165);
+}
+
+.results-header{
+  width: 70%;
+  margin-left: 15%;
+  /* border-radius: 10px; */
+  margin-bottom: 0px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border: 1px solid black;
+  border-bottom: none;
+  background-color: rgb(64, 152, 155);
+}
+
+.results{
+  border: 1px solid;
+  margin-top: 0px;
+  margin-left: 15%;
+  margin-right: 15%;
+  /* border-top: none; */
 }
